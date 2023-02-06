@@ -1,9 +1,48 @@
 $colorFondo: rgba(231, 160, 160, 0.671);
 $margen: 0px;
 $padding: 0px;
+$colorLetra: rgb(51, 12, 12);
+
 body{
     background-color: $colorFondo;
     padding: $margen;
     margin: $padding;
 }
-
+h1{
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    color: rgb(173, 28, 28);
+}
+h2, h3, h4{
+    color: $colorLetra;
+    margin: auto;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+p {
+    margin: auto;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.img1{
+    margin-left: 9%;
+}
+.tamanoImgMujerHombre{
+    width:50px;
+    height:50px;
+}
+.tamanoImgParienteCodigoAspecto{
+    width:115px;
+    height:115px;
+}
+.pjs{
+    margin-left: 20%;
+}
+.tablaPersonajes{
+    width: 100%;
+}
+.imagenConTexto{
+    margin-left: 120px;
+}

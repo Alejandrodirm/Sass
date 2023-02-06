@@ -3,4 +3,42 @@ body {
   padding: 0px;
   margin: 0px; }
 
+h1 {
+  margin: auto;
+  width: 15%;
+  padding: 10px;
+  color: #ad1c1c; }
+
+h2, h3, h4 {
+  color: #330c0c;
+  margin: auto;
+  margin-left: 120px;
+  margin-top: 10px; }
+
+p {
+  margin: auto;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 20px; }
+
+.img1 {
+  margin-left: 9%; }
+
+.tamanoImgMujerHombre {
+  width: 50px;
+  height: 50px; }
+
+.tamanoImgParienteCodigoAspecto {
+  width: 115px;
+  height: 115px; }
+
+.pjs {
+  margin-left: 20%; }
+
+.tablaPersonajes {
+  width: 100%; }
+
+.imagenConTexto {
+  margin-left: 120px; }
+
 /*# sourceMappingURL=style.css.map */
