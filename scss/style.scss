@@ -1,9 +1,9 @@
 $colorFondo: rgba(231, 160, 160, 0.671);
 $margen: 0px;
 $padding: 0px;
-$colorLetra: rgb(51, 12, 12);
+$colorLetra: rgb(63, 21, 21);
 
-body{
+html{
     background-color: $colorFondo;
     padding: $margen;
     margin: $padding;
@@ -25,6 +25,7 @@ p {
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 20px;
+    font-family: cursive;
 }
 .img1{
     margin-left: 9%;

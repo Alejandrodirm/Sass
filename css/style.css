@@ -1,4 +1,4 @@
-body {
+html {
   background-color: rgba(231, 160, 160, 0.671);
   padding: 0px;
   margin: 0px; }
@@ -10,7 +10,7 @@ h1 {
   color: #ad1c1c; }
 
 h2, h3, h4 {
-  color: #330c0c;
+  color: #3f1515;
   margin: auto;
   margin-left: 120px;
   margin-top: 10px; }
@@ -19,7 +19,8 @@ p {
   margin: auto;
   margin-left: 120px;
   margin-right: 120px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: cursive; }
 
 .img1 {
   margin-left: 9%; }
