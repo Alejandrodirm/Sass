@@ -1,26 +1,32 @@
-html {
-  background-color: rgba(231, 160, 160, 0.671);
+/*
+https://sass-lang.com/documentation/syntax/structure
+*/
+body {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  background-color: #e26d6d; }
 
 h1 {
   margin: auto;
   width: 15%;
-  padding: 10px;
+  padding: sumar(5, 5);
   color: #ad1c1c; }
 
 h2, h3, h4 {
-  color: #3f1515;
+  color: #1b357c;
   margin: auto;
   margin-left: 120px;
-  margin-top: 10px; }
+  margin-top: restar(15, 5); }
+  h2 .h2, h3 .h2, h4 .h2 {
+    margin-bottom: 10px; }
 
 p {
   margin: auto;
   margin-left: 120px;
   margin-right: 120px;
-  margin-top: 20px;
-  font-family: cursive; }
+  margin-top: multiplicar(10, 2);
+  font-family: cursive;
+  color: #630c34; }
 
 .img1 {
   margin-left: 9%; }
@@ -30,7 +36,7 @@ p {
   height: 50px; }
 
 .tamanoImgParienteCodigoAspecto {
-  width: 115px;
+  width: dividir(230px, 2);
   height: 115px; }
 
 .pjs {
@@ -42,5 +48,19 @@ p {
 
 .imagenConTexto {
   margin-left: 120px; }
+
+div, .extender {
+  background-color: cadetblue; }
+  div h3, .extender h3 {
+    color: #cfbfc3; }
+  div p, .extender p {
+    background-color: aliceblue;
+    font-family: verdana; }
+
+h3 {
+  margin-top: 8.3333333333%; }
+
+h3 {
+  margin-top: 16.6666666667%; }
 
 /*# sourceMappingURL=style.css.map */

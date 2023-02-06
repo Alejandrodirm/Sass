@@ -1,31 +1,47 @@
-$colorFondo: rgba(231, 160, 160, 0.671);
+@import "mixin2";
+/*
+https://sass-lang.com/documentation/syntax/structure
+*/
 $margen: 0px;
 $padding: 0px;
-$colorLetra: rgb(63, 21, 21);
+$colorLetra: rgb(99, 12, 52);
+$colorTituloH1: rgb(173, 28, 28);
+$colorTitulosH2H3H4: rgb(27, 53, 124);
+$margenIzq:120px;
+$margenTituloP:auto;
+$colordeFondo:rgb(226, 109, 109);
+@mixin margenAbajo(){
+    margin-bottom: 10px ;
+}
 
-html{
-    background-color: $colorFondo;
+body{
     padding: $margen;
     margin: $padding;
+    background-color: $colordeFondo;
 }
 h1{
-    margin: auto;
+    margin: $margenTituloP;
     width: 15%;
-    padding: 10px;
-    color: rgb(173, 28, 28);
+    padding: sumar(5,5);
+    color: $colorTituloH1;
 }
-h2, h3, h4{
-    color: $colorLetra;
-    margin: auto;
-    margin-left: 120px;
-    margin-top: 10px;
+h2,h3,h4{
+    color: $colorTitulosH2H3H4;
+    margin: $margenTituloP;
+    margin-left: $margenIzq;
+    margin-top:restar(15,5);
+    .h2{
+        @include margenAbajo();
+    }
+
 }
 p {
-    margin: auto;
-    margin-left: 120px;
+    margin: $margenTituloP;
+    margin-left: $margenIzq;
     margin-right: 120px;
-    margin-top: 20px;
+    margin-top: multiplicar(10,2);
     font-family: cursive;
+    color: $colorLetra;
 }
 .img1{
     margin-left: 9%;
@@ -35,7 +51,7 @@ p {
     height:50px;
 }
 .tamanoImgParienteCodigoAspecto{
-    width:115px;
+    width:dividir(230px,2);
     height:115px;
 }
 .pjs{
@@ -47,5 +63,38 @@ p {
     margin-left: 50px;
 }
 .imagenConTexto{
-    margin-left: 120px;
+    margin-left: $margenIzq;
+}
+div{
+    h3{
+        color: rgb(207, 191, 195);
+    }
+    
+    background-color: cadetblue;
+    p{
+        background-color: aliceblue;
+        font: {
+            family:verdana;
+        }
+    }
+}
+.extender{
+    @extend div ;
+}
+@function sumar($primero,$segundo){
+ @return $primero+$segundo;
+}
+@function restar($primero,$segundo){
+    @return $primero-$segundo;
+}
+@function multiplicar($primero,$segundo){
+    @return $primero*$segundo;
+}
+@function dividir($primero,$segundo){
+    @return ($primero/$segundo);
+}
+@for $i from 1 to 3{
+    h3{
+        margin-top: 100%/12*$i;
+    }
 }
