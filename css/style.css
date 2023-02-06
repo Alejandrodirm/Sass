@@ -37,7 +37,8 @@ p {
   margin-left: 20%; }
 
 .tablaPersonajes {
-  width: 100%; }
+  width: 100%;
+  margin-left: 50px; }
 
 .imagenConTexto {
   margin-left: 120px; }
