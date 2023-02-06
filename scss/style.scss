@@ -1,6 +1,9 @@
-$colorFondo: black;
+$colorFondo: rgba(231, 160, 160, 0.671);
+$margen: 0px;
+$padding: 0px;
 body{
     background-color: $colorFondo;
-    padding: 0px;
-    margin: 0px;
+    padding: $margen;
+    margin: $padding;
 }
+
