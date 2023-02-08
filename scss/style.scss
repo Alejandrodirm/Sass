@@ -1,7 +1,7 @@
+//imports
 @import "mixin2";
-/*
-https://sass-lang.com/documentation/syntax/structure
-*/
+
+//Variables
 $margen: 0px;
 $padding: 0px;
 $colorLetra: rgb(99, 12, 52);
@@ -10,10 +10,11 @@ $colorTitulosH2H3H4: rgb(27, 53, 124);
 $margenIzq:120px;
 $margenTituloP:auto;
 $colordeFondo:rgb(226, 109, 109);
+//Mixins y otro en el otro scss
 @mixin margenAbajo(){
     margin-bottom: 10px ;
 }
-
+//selectores
 body{
     padding: $margen;
     margin: $padding;
@@ -81,6 +82,7 @@ div{
 .extender{
     @extend div ;
 }
+//Funciones 
 @function sumar($primero,$segundo){
  @return $primero+$segundo;
 }
@@ -93,6 +95,7 @@ div{
 @function dividir($primero,$segundo){
     @return ($primero/$segundo);
 }
+//Bucles
 @for $i from 1 to 3{
     h3{
         margin-top: 100%/12*$i;
