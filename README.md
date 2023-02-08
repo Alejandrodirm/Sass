@@ -1,1 +1,2 @@
 # Sass
+Es una página web de un videojuego llamado Code Vein es un juego que trata sobre un mundo posapocaliptico donde hay que sobrevivir , la página ha sido creada en html y sass el cual se ha usado para crear el css desde el scss usando el comando --watch scss/style.scss:css/style.css.
